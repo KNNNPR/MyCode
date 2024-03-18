@@ -1,0 +1,3 @@
+﻿  ArthursFileGenerator.cpp
+C:\Users\Кирилл\Desktop\SiAOD_Prac5.0_Coop\ArthursFileGenerator\ArthursFileGenerator.cpp(222,15): warning C4101: userKeyToInsert: неиспользованная локальная переменная
+  ArthursFileGenerator.vcxproj -> C:\Users\Кирилл\Desktop\SiAOD_Prac5.0_Coop\x64\Debug\ArthursFileGenerator.exe

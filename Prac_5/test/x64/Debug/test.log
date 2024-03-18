@@ -1,0 +1,6 @@
+﻿  test.cpp
+C:\Users\Кирилл\Prac_5\test\test.cpp(184,18): warning C4101: buff: неиспользованная локальная переменная
+C:\Users\Кирилл\Prac_5\test\test.cpp(152): warning C4715: RecursePushFront: значение возвращается не при всех путях выполнения
+C:\Users\Кирилл\Prac_5\test\test.cpp(9): warning C4715: recurseBinar: значение возвращается не при всех путях выполнения
+C:\Users\Кирилл\Prac_5\test\test.cpp(138): warning C4715: RecursePushBack: значение возвращается не при всех путях выполнения
+  test.vcxproj -> C:\Users\Кирилл\Prac_5\x64\Debug\test.exe

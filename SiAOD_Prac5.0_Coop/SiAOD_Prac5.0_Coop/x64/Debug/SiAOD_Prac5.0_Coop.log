@@ -1,0 +1,4 @@
+﻿  SiAOD_Prac5.0_Coop.cpp
+C:\Users\Кирилл\Desktop\SiAOD_Prac5.0_Coop\SiAOD_Prac5.0_Coop\SiAOD_Prac5.0_Coop.cpp(102,31): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Кирилл\Desktop\SiAOD_Prac5.0_Coop\SiAOD_Prac5.0_Coop\SiAOD_Prac5.0_Coop.cpp(39): warning C4715: binTree::preDeleteNode: значение возвращается не при всех путях выполнения
+  SiAOD_Prac5.0_Coop.vcxproj -> C:\Users\Кирилл\Desktop\SiAOD_Prac5.0_Coop\x64\Debug\SiAOD_Prac5.0_Coop.exe

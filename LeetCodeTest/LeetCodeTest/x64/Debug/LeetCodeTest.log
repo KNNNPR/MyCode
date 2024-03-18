@@ -1,0 +1,3 @@
+﻿  LeetCodeTest.cpp
+C:\Users\Кирилл\Desktop\LeetCodeTest\LeetCodeTest\LeetCodeTest.cpp(23): warning C4715: twoSum: значение возвращается не при всех путях выполнения
+  LeetCodeTest.vcxproj -> C:\Users\Кирилл\Desktop\LeetCodeTest\x64\Debug\LeetCodeTest.exe

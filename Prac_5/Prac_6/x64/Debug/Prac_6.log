@@ -1,0 +1,12 @@
+﻿  Prac_6.cpp
+C:\Users\Кирилл\Prac_5\Prac_6\Prac_6.cpp(40,21): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Кирилл\Prac_5\Prac_6\Prac_6.cpp(40,6): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "RecursePushBack"
+C:\Users\Кирилл\Prac_5\Prac_6\Prac_6.cpp(41,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\Кирилл\Prac_5\Prac_6\Prac_6.cpp(41,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\Кирилл\Prac_5\Prac_6\Prac_6.cpp(167,18): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "Sentence"
+C:\Users\Кирилл\Prac_5\Prac_6\Prac_6.cpp(167,18): error C2065: Sentence: необъявленный идентификатор
+C:\Users\Кирилл\Prac_5\Prac_6\Prac_6.cpp(179,25): error C2065: Sentence: необъявленный идентификатор
+C:\Users\Кирилл\Prac_5\Prac_6\Prac_6.cpp(181,21): error C2065: Sentence: необъявленный идентификатор
+C:\Users\Кирилл\Prac_5\Prac_6\Prac_6.cpp(191,25): error C2065: Sentence: необъявленный идентификатор
+C:\Users\Кирилл\Prac_5\Prac_6\Prac_6.cpp(193,21): error C2065: Sentence: необъявленный идентификатор
+C:\Users\Кирилл\Prac_5\Prac_6\Prac_6.cpp(196,13): error C2065: Sentence: необъявленный идентификатор
