@@ -1,0 +1,4 @@
+﻿  force.cpp
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac7\force\force.cpp(12,34): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac7\force\force.cpp(61,34): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  force.vcxproj -> C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac7\x64\Debug\force.exe

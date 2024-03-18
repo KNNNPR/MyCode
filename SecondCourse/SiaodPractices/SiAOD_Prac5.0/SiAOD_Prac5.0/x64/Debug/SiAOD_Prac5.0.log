@@ -1,0 +1,9 @@
+﻿  SiAOD_Prac5.0.cpp
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\SiAOD_Prac5.0\SiAOD_Prac5.0.cpp(47,61): warning C4244: аргумент: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\SiAOD_Prac5.0\SiAOD_Prac5.0.cpp(143,31): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\SiAOD_Prac5.0\SiAOD_Prac5.0.cpp(168,35): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\SiAOD_Prac5.0\SiAOD_Prac5.0.cpp(196,25): warning C4244: инициализация: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\SiAOD_Prac5.0\SiAOD_Prac5.0.cpp(164,30): warning C4101: pos: неиспользованная локальная переменная
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\SiAOD_Prac5.0\SiAOD_Prac5.0.cpp(65): warning C4715: binTree::preDeleteNode: значение возвращается не при всех путях выполнения
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\SiAOD_Prac5.0\SiAOD_Prac5.0.cpp(57): warning C4715: binTree::searchNode: значение возвращается не при всех путях выполнения
+  SiAOD_Prac5.0.vcxproj -> C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\x64\Debug\SiAOD_Prac5.0.exe

@@ -1,0 +1,13 @@
+﻿  AVLTask.cpp
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\AVLTask\AVLTask.cpp(61,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\AVLTask\AVLTask.cpp(70,25): warning C4018: >: несоответствие типов со знаком и без знака
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\AVLTask\AVLTask.cpp(113,13): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\AVLTask\AVLTask.cpp(131,19): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\AVLTask\AVLTask.cpp(132,24): warning C4018: >: несоответствие типов со знаком и без знака
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\AVLTask\AVLTask.cpp(155,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\AVLTask\AVLTask.cpp(160,73): warning C4244: аргумент: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\AVLTask\AVLTask.cpp(165,78): warning C4244: аргумент: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\AVLTask\AVLTask.cpp(191,44): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\AVLTask\AVLTask.cpp(151,18): warning C4101: pos: неиспользованная локальная переменная
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\AVLTask\AVLTask.cpp(72): warning C4715: searchNode: значение возвращается не при всех путях выполнения
+  AVLTask.vcxproj -> C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac5.0\x64\Debug\AVLTask.exe

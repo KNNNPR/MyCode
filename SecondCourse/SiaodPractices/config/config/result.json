@@ -1,0 +1,57 @@
+{
+	"groups": [
+		IKBO-01-20,
+		IKBO-02-20,
+		IKBO-03-20,
+		IKBO-04-20,
+		IKBO-05-20,
+		IKBO-06-20,
+		IKBO-07-20,
+		IKBO-08-20,
+		IKBO-09-20,
+		IKBO-10-20,
+		IKBO-11-20,
+		IKBO-12-20,
+		IKBO-13-20,
+		IKBO-14-20,
+		IKBO-15-20,
+		IKBO-16-20,
+		IKBO-17-20,
+		IKBO-18-20,
+		IKBO-19-20,
+		IKBO-20-20,
+		IKBO-21-20,
+		IKBO-22-20,
+		IKBO-23-20,
+		IKBO-24-20
+	],
+	"students": [
+		{
+			"age": 19,
+			"group": IKBO-04-20,
+			"name": Ivanov I.I.
+		},
+		{
+			"age": 18,
+			"group": IKBO-05-20,
+			"name": Petrov P.P.
+		},
+		{
+			"age": 18,
+			"group": IKBO-05-20,
+			"name": Sidorov S.S.
+		}
+	],
+	"subject": "Configuration management",
+	"groups": [
+		IKBO-11-00
+	],
+	"students": [
+		{
+			"age": 11,
+			"group": 5-Г,
+			"name": Anonim Anonimovich
+		}
+	],
+	"subject": "Physical training"
+}

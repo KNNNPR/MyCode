@@ -1,0 +1,329 @@
+
+<style>
+
+    #contents {
+      text-align: center;
+    }
+ 
+    #contents a {
+      font-size: 1.2em;
+      text-decoration: none; 
+    }
+
+    .thumbnail {
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    .thumbnail:hover {
+      opacity: 0.7;
+    }
+    .main-image {
+      max-width: 400px;
+    }
+
+
+    #myList {
+      width: 400px; 
+      margin: 0 auto; 
+      padding: 20px;
+      border: 1px solid #ccc; 
+      list-style: none;
+    }
+    
+
+    #myList li.selected {
+        background-color: lightblue;
+    }
+
+    .slider-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+
+    .slider {
+        width: 300px;
+        height: 20px;
+        border: 1px solid #ccc;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .track {
+        width: 100%;
+        height: 100%;
+        background-color: lightgray;
+        position: absolute;
+    }
+
+    .thumb {
+        width: 20px;
+        height: 20px;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+
+    .items {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .item {
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin: 5px;
+        cursor: move;
+    }
+
+    .cart {
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 200px;
+    }
+
+    .cart-items {
+        min-height: 100px;
+        border: 1px dashed #ccc;
+        margin-bottom: 10px;
+    }
+
+    .big-button {
+        display: block;
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+    
+    #animatedElement {
+        margin-top: 2rem;
+        width: 200px;
+        height: 200px;
+        background-color: #3498db;
+        color: white;
+        text-align: center;
+        line-height: 200px;
+        font-size: 20px;
+    }
+
+</style>
+
+
+<div id="contents">
+    <a href="https://example.com">Ссылка 1</a>
+    <div>
+      <a href="https://example.com">Ссылка 2 <i>со вложением</i></a> 
+    </div>
+</div>
+
+
+
+<img id="mainImage" class="main-image" src="ezhik.jpg" alt="Основное изображение">
+
+
+<div id="thumbnails">
+  <img class="thumbnail" src="/Task1-2/Images/grach.png" alt="Изображение 1">
+  <img class="thumbnail" src="/Task1-2/CourseWork/imgs/listya.png" alt="Изображение 2">
+  <img class="thumbnail" src="/Task1-2/Images/scream.png" alt="Изображение 3">
+</div>
+
+
+<ul id="myList">
+    <li>Элемент 1</li>
+    <li>Элемент 2</li>
+    <li>Элемент 3</li>
+    <li>Элемент 4</li>
+</ul>
+
+
+<div class="slider-container">
+    <div class="slider">
+        <div class="track">
+            <div class="thumb"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="items">
+    <div class="item" draggable="true" data-price="10">Товар 1 - $10</div>
+    <div class="item" draggable="true" data-price="15">Товар 2 - $15</div>
+    <div class="item" draggable="true" data-price="20">Товар 3 - $20</div>
+</div>
+  
+<div class="cart">
+    <h2>Корзина</h2>
+    <div class="cart-items">
+        Перетащите товары сюда
+    </div>
+    <p>Итог: $<span id="total">0</span></p>
+</div>
+
+
+
+<button class="big-button" onclick="startAnimation()">Начать анимацию</button>
+
+
+
+<button onclick="animateElement()"><div id="animatedElement">Вау</div></button>
+
+<script>
+    document.getElementById('contents').addEventListener('click', function(event) {
+
+      if (event.target.tagName === 'A') {
+
+        event.preventDefault();
+  
+
+        const confirmation = confirm('Вы уверены, что хотите покинуть страницу?');
+
+        if (confirmation) {
+          window.location.href = event.target.href;
+        }
+      }
+    });
+
+
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.getElementById('mainImage');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+
+        const imageUrl = thumbnail.getAttribute('src');
+        mainImage.setAttribute('src', imageUrl);
+        mainImage.setAttribute('alt', thumbnail.getAttribute('alt'));
+      });
+    });
+
+
+    const list = document.getElementById('myList');
+
+    list.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      if (event.ctrlKey || event.metaKey) {
+        event.target.classList.toggle('selected');
+      } else {
+        const allListItems = list.getElementsByTagName('li');
+        for (let i = 0; i < allListItems.length; i++) {
+          allListItems[i].classList.remove('selected');
+        }
+        event.target.classList.add('selected');
+      }
+    });
+
+
+
+    const thumb = document.querySelector('.thumb');
+    const track = document.querySelector('.track');
+
+    let isDragging = false;
+
+    thumb.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+        const thumbHalfWidth = thumb.offsetWidth / 2;
+        const trackRect = track.getBoundingClientRect();
+
+        let positionX = e.clientX - trackRect.left - thumbHalfWidth;
+
+        if (positionX < 0) {
+        positionX = 0;
+        } else if (positionX > track.offsetWidth - thumb.offsetWidth) {
+        positionX = track.offsetWidth - thumb.offsetWidth;
+        }
+
+        thumb.style.left = `${positionX}px`;
+    }
+    });
+
+    document.addEventListener('mouseup', () => {
+    isDragging = false;
+    });
+
+    thumb.addEventListener('dragstart', (e) => {
+    e.preventDefault();
+    });
+
+
+    const items = document.querySelectorAll('.item');
+    const cart = document.querySelector('.cart-items');
+    const totalSpan = document.getElementById('total');
+    let total = 0;
+
+    items.forEach(item => {
+    item.addEventListener('dragstart', e => {
+        e.dataTransfer.setData('text/plain', e.target.dataset.price);
+    });
+    });
+
+    cart.addEventListener('dragover', e => {
+        e.preventDefault();
+    });
+
+    cart.addEventListener('drop', e => {
+        e.preventDefault();
+        const price = e.dataTransfer.getData('text/plain');
+        total += parseInt(price);
+        totalSpan.textContent = total;
+        const itemName = document.createElement('div');
+        itemName.textContent = `Товар - $${price}`;
+        cart.appendChild(itemName);
+    });
+
+
+    function startAnimation() {
+    const body = document.body;
+    const colors = ['#ffcc00', '#66ccff', '#ff6666', '#99ff99', '#cc99ff'];
+    let index = 0;
+
+    const changeColor = () => {
+        body.style.backgroundColor = colors[index];
+        index = (index + 1) % colors.length;
+    };
+
+    const intervalId = setInterval(changeColor, 1000);
+    setTimeout(() => {
+        clearInterval(intervalId);
+        body.style.backgroundColor = '';
+    }, 5000);
+    }
+
+
+    const animatedElement = document.getElementById('animatedElement');
+
+    function animateElement() {
+    let width = 200;
+    let fontSize = 20;
+    let colorIndex = 0;
+    const colors = ['#3498db', '#2ecc71', '#e74c3c', '#f39c12'];
+
+    const animationId = setInterval(() => {
+        width += 10;
+        fontSize += 2;
+        colorIndex = (colorIndex + 1) % colors.length;
+
+        animatedElement.style.width = `${width}px`;
+        animatedElement.style.fontSize = `${fontSize}px`;
+        animatedElement.style.backgroundColor = colors[colorIndex];
+    }, 100);
+
+    setTimeout(() => {
+        clearInterval(animationId);
+    }, 5000);
+    }
+</script>

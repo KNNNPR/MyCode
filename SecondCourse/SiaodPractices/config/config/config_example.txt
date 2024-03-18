@@ -1,0 +1,7 @@
+( ! IKBO-01-20  IKBO-02-20 IKBO-03-20  IKBO-04-20  IKBO-05-20  IKBO-06-20  IKBO-07-20  IKBO-08-20  IKBO-09-20  IKBO-10-20  IKBO-11-20  IKBO-12-20  IKBO-13-20  IKBO-14-20  IKBO-15-20  IKBO-16-20  IKBO-17-20  IKBO-18-20  IKBO-19-20  IKBO-20-20  IKBO-21-20  IKBO-22-20  IKBO-23-20  IKBO-24-20  )
+( ? '19 IKBO-04-20 Ivanov I.I.' '18 IKBO-05-20 Petrov P.P.' '18 IKBO-05-20 Sidorov S.S.')
+#add yout personal information for fourth student
+( ~ 'Configuration management' )
+( ! IKBO-11-00 )
+( ? '11 5-Г Anonim Anonimovich' )
+( ~ 'Physical training' )

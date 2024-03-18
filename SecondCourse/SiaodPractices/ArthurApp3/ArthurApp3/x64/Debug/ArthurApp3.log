@@ -1,0 +1,4 @@
+﻿  ArthurApp3.cpp
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\ArthurApp3\ArthurApp3\ArthurApp3.cpp(109,37): warning C4244: аргумент: преобразование "__int64" в "const int", возможна потеря данных
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\ArthurApp3\ArthurApp3\ArthurApp3.cpp(110,29): warning C4244: аргумент: преобразование "__int64" в "int", возможна потеря данных
+  ArthurApp3.vcxproj -> C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\ArthurApp3\x64\Debug\ArthurApp3.exe

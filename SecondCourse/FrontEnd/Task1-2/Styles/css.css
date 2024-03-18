@@ -1,0 +1,62 @@
+*{
+    background-color: rgb(73, 77, 184);
+}
+
+body {
+    font-family: "consolas";
+}
+
+form {
+    border: solid rgb(0, 0, 0);
+    position: absolute;
+    top: 10%;
+    right: 40%;
+}
+
+label {
+    display: block;
+}
+
+
+input[type="submit"] {
+    padding: 5px 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.like {
+    text-align: center;
+    z-index: 5;
+}
+
+
+
+#like_button {
+    font-size: 2rem;
+    border: none;
+    background: transparent;
+}
+
+#like_button:hover {
+    cursor: pointer;
+}
+
+.love {
+    margin-top: -75px;
+    height: 1000px;
+    z-index: 1;
+}
+
+.love span {
+    background-image: url(/Task1-2/Images/grach.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+}

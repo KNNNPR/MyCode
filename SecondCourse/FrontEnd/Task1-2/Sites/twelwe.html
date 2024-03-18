@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>12 работа</title>
+  <style>
+    .notification-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .notification {
+      top: 20px;
+      left: 20px;
+      color: #ffffff;
+      font-size: 2rem;
+      padding: 10px 20px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="notificationBtn" class="notification-btn">Уведомление (0)</button>
+
+  <h2>Создание списка</h2>
+  <ul id="list"></ul>
+  <script>
+    function createListItem() {
+      const userInput = prompt('Введите содержимое нового пункта списка:');
+      if (userInput !== null && userInput !== '') {
+        const list = document.getElementById('list');
+        const listItem = document.createElement('li');
+        listItem.textContent = userInput;
+        list.appendChild(listItem);
+        createListItem();
+      }
+    }
+
+    createListItem();
+  </script>
+
+  <script>
+    let count = 0;
+    let notificationInterval;
+    
+    function updateNotification() {
+      count++;
+      document.getElementById('notificationBtn').innerText = `Уведомление (${count})`;
+    }
+    
+    function startNotificationInterval() {
+      notificationInterval = setInterval(updateNotification, 3000);
+    }
+    
+    function stopNotification() {
+      clearInterval(notificationInterval);
+      setTimeout(startNotificationInterval, 10000);
+    }
+    
+    document.getElementById('notificationBtn').addEventListener('click', stopNotification);
+    startNotificationInterval();
+  </script>
+
+
+  <script>
+    function showNotification(options) {
+      const notificationDiv = document.createElement('div');
+      notificationDiv.classList.add('notification');
+      notificationDiv.textContent = options.content;
+      document.body.appendChild(notificationDiv);
+
+      setTimeout(() => {
+        notificationDiv.style.display = 'none';
+        document.body.removeChild(notificationDiv);
+      }, 1500);
+      
+      notificationDiv.style.display = 'block';
+    }
+
+    showNotification({ content: 'ЭТО УВЕДОМЛЕНИЕ ПРОПАДЁТ ЧЕРЕЗ ПОЛТОРЫ СЕКУНДЫ' });
+  </script>
+
+</body>
+</html>

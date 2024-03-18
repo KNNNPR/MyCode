@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>13</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #imageContainer {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div id="imageContainer">
+    <img id="centeredImage" src="/Task1-2/CourseWork/imgs/lagushatnyk.png" alt="Centered Image">
+  </div>
+
+  <script>
+    window.onload = function() {
+      const imageContainer = document.getElementById('imageContainer');
+      const centeredImage = document.getElementById('centeredImage');
+
+      function centerImage() {
+        const centerX = window.innerWidth / 2 - centeredImage.width / 2;
+        const centerY = window.innerHeight / 2 - centeredImage.height / 2;
+        imageContainer.style.left = `${centerX}px`;
+        imageContainer.style.top = `${centerY}px`;
+      }
+
+      centerImage();
+      window.addEventListener('resize', centerImage);
+
+      document.addEventListener('click', function(event) {
+        const x = event.clientX;
+        const y = event.clientY;
+        console.log(`Координаты клика: X=${x}, Y=${y}`);
+      });
+    };
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,100 @@
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+a:visited {
+    color: crimson;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: aqua;
+}
+img {
+    float: left;
+    margin-right: 1rem;
+}
+
+nav {
+    width: 580px;
+    position: fixed;
+    padding:0px;
+    top: 10px;
+    right: 140px;
+}
+nav a {
+    margin: 5px;
+    padding: auto;
+    display: inline-block;
+    list-style: georgian;
+}
+
+
+#one {
+    height: 220px;
+    width: 400px;
+    background-color: cadetblue;
+    display: inline-block;
+}
+
+#two {
+    height: 200px;
+    width: 400px;
+    background-color: cadetblue;
+    display: inline-block;
+}
+
+#three {
+    height: 200px;
+    width: 500px;
+    background-color: cadetblue;
+    display: inline-block;
+}
+
+#titleTwo {
+    margin: 50px;
+}
+
+#titleOne section {
+    position: relative;
+    top: 0px;
+}
+
+
+
+form {
+    border: solid; border-radius: 10px;
+    width: 410px;
+    margin: 50px;
+    background-color:aquamarine;
+}
+
+input {
+    background-color: rgb(29, 83, 65);
+}
+
+textarea {
+    background-color: rgb(29, 83, 65);
+}
+
+fieldset {
+    background-color: rgb(29, 83, 65);
+}
+
+select {
+    background-color: rgb(29, 83, 65);
+}
+
+input:focus {
+    background-color: rgb(63, 63, 132);
+    font-size: 1rem;
+}
+
+input::placeholder {
+    padding: 1vmin;
+}

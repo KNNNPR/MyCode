@@ -1,0 +1,306 @@
+<!DOCTYPE html> <!--Тип документа для браузера-->
+<html lang="ru"> <!--Самый главный тег-->
+<head> <!--Вся техническая информация о странице-->
+    <meta charset="UTF-8"> <!--Кодировка страницы-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Для совместимости с IE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--Для красивого отображения на мобильных устройствах-->
+    <title>Магазин сладостей</title> <!--Заголовок страницы-->
+    <link rel="icon" href="favicon.ico" sizes="any"> <!--Фавикона страницы-->
+    <link rel="stylesheet" href="stylee.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+</head>
+<body> <!--Тело веб-страницы-->
+    <header>
+        <img src="logo.jpg" alt="Логотип" width =256 height=256 class="header-logo">
+        <p>
+            <h1 id="Title1">Магазин сладостей Candy World</h1> 
+        </p>
+        <div class="menu">
+            <nav> <!-- Создание для шапки сайта -->
+                <ul>
+                    <li><a href="#Topic1">Мороженое</a></li>
+                    <li><a href="#Topic2">Конфеты</a></li>
+                    <li><a href="#Topic3">Шоколад</a></li>
+                    <li><a href="#Topic4">Мармелад</a></li>
+                    <li><a href="#Topic5">Пастила</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="notification">
+        <div class="notification-list">
+          <ul>
+            <li><a href="#Ads">Вам предоставлена скидка!</a></li>
+            <li><a href="#Replays">Написать отзыв</a></li>
+            <li>Уведомление 3</li>
+          </ul>
+        </div>
+        <div class="notification-icon">&#128276;</div>
+    </div>
+      
+
+    
+    <div class="wrapper">
+        <label for="check-menu" class="burger-icon"></label> <!--менять местами-->
+        <input type="checkbox" id="check-menu"> <!--менять местами-->
+        <nav class="main-menu">
+          <a href="#Topic1">Мороженое</a>
+          <a href="#Topic2">Конфеты</a>
+          <a href="#Topic3">Шоколад</a>
+          <a href="#Topic4">Мармелад</a>
+          <a href="#Topic5">Пастила</a>
+        </nav>
+    </div>
+
+    <div class="button-container">
+        <button class="button"><a href="#Topic1">Мороженое</a></button>
+        <button class="button"><a href="#Topic2">Конфеты</a></button>
+        <button class="button"><a href="#Topic3">Шоколад</a></button>
+        <button class="button"><a href="#Topic4">Мармелад</a></button>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-image card-1"></div>
+            <div class="card-content">
+                <h3>Пончики</h3>
+                <p>Попробуйте наши пончики, приготовленные по уникальному рецепту наших кондитеров!</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image card-2"></div>
+            <div class="card-content">
+                <h3>Шоколад</h3>
+                <p>В наших изделиях используется только самый качественный шоколад, который вы оцените по достоинству</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image card-3"></div>
+            <div class="card-content">
+                <h3>Мороженое</h3>
+                <p>Гордость нашего магазина. Обязательно попробуйте наше домашнее мороженое!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <div class="video">
+            <video controls>
+                <source src="cat.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-caption">
+                <h3>Осторожно очень громко</h3>
+                <p>Наше мороженое</p>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        <section> <!--область секции-->
+            <h2 id="Topic1">Мороженое</h2>
+            <h4>В ассортименте имеются позиции:</h4>
+            <ol> <sup> <!--упорядоченный список-->
+                <li>Пломбир</li>
+                <li>Фруковый лед</li>
+                <li>Шоколадное</li>
+            </ol> </sup>
+        </section>
+
+        <section> <!--область секции-->
+            <h2 id="Topic2">Конфеты</h2>
+            <h4>В ассортименте имеются позиции:</h4>
+            <ol type=1> <cite> <!--упорядоченный список-->
+                <li>Жевательные</li>
+                <li>Карамель</li>
+                <li>Шоколадные</li>
+            </ol> </cite>
+        </section>
+
+        <section> <!--область секции-->
+            <h2 id="Topic3">Шоколад</h2>
+            <h4>В ассортименте имеются позиции:</h4>
+            <ol type=A> <abbr> <!--упорядоченный список-->
+                <li>Темный</li>
+                <li>Молочный</li>
+                    <ul> <blockquote> <!--Неупорядоченный список-->
+                        <li>Милка</li>
+                        <li>Alpen gold</li>
+                        <li>Алёнка</li>
+                    </ul> </blockquote>
+                <li>Белый</li>
+            </ol> </abbr>
+        </section>
+
+        <section> <!--область секции-->
+            <h2 id="Topic4">Мармелад</h2>
+            <h4>В ассортименте имеются позиции:</h4>
+            <ol type=I> <u> <!--упорядоченный список-->
+                <li>Кислый</li>
+                <li>Сладкий</li>
+                <li>Лакрица</li>
+            </ol> </u>
+        </section>
+
+        <section> <!--область секции-->
+            <h2 id="Topic5">Пастила</h2>
+            <h4>В ассортименте имеются позиции:</h4>
+            <ol type=i>
+                <li>Белая</li>
+                <li>В шоколаде</li>
+            </ol>
+        </section>
+
+        <article> <!--независимая секция-->
+            <h3 id="Replays">Отзывы о наших сладостях:</h3>
+            <p>Каждый раз покупаю в этом магазине сладости на корпоратив. Соотношение цена-качество радует.</p>
+            <p>Спасибо вам за такой вкусный ассортимент мороженого!</p>
+        </article>
+
+        <aside> <!--дополняющая секция(боковая панель) для рекламы-->
+            <h3 id="Ads">Реклама</h3>
+            <p>Специальное предложение:</p>
+            <p>Купите две упаковки мороженого и получите третью бесплатно!</p>
+            <p>Акция действует до 31 декабря.</p>
+        </aside> 
+    </main>
+
+    <strong>Актуальный список сладостей можно узнать по телефону:</strong>
+    <a href="tel:88005553535">8-800-555-35-35</a> </br> <!--Гиперссылка позволяющая пользователю нажать и набрать номер телефона-->
+    <b>Корпоративная почта:</b>
+    <a href="mailto:sendmail@gmail.com"><i>sendmail@gmail.com (писать только по вопросам сотрудничества!)</i></a> </br> <!--Гиперссылка для отправки почтового сообщения на указанный адрес электронной почты-->
+    <em>Ссылка на нашего торгового представителя:</em>
+    <a href="https://web.telegram.org/k/"><u>Официальная страница в telegram</u></a> </br> <!--Гиперссылка на сторонний веб-сайт-->
+    </br>
+    <h3>Почему вы должны выбрать именно нас?</h3>
+    <dl> <!--Список описаний-->
+        <dt><strong>Надежность</strong></dt>
+        <dd>Наша компания существует на рынке более 10 лет</dd>
+        <dd>У нас сертифицированные и проверенные поставщики</dd> </br>
+        <dt><strong>Качество</strong></dt>
+        <dd>Все наши товары проходят соответствие стандарту</dd> </br>
+        <dt><strong>Выбор потребителя</strong></dt>
+        <dd>Наши товары покупают купили уже более 500.000 покупателей</dd> </br>
+        <dt><strong>Гарантия</strong></dt>
+        <dd>Если вы не будете довольны нашим товаром мы вернем вам деньги</dd> </br>
+        <dt><strong>Круглосуточная консультация</strong></dt>
+        <dd>На нашем портале вы всегда можете обратиться к костультанту за помощью</dd> </br>
+
+    </dl>
+    <figure> <!--Изображение-ссылка на внешний ресурс-->
+        <img src="https://lavka-obitel.ru/media/catalog/product/cache/d09283a545639437f21bf6bea6bc2364/t/o/top-view-sewing-essentials-with-textiles-copy-space_2_.jpg" alt="Сладости" width = 700 height="700">
+        <figcaption>Наши сладости</figcaption> <!--Текст под изображением-->
+    </figure>
+
+    <figure> <!--Изображение-карта с тремя областями ссылками-->
+        <img src="Sweets.jpg" alt="Сладости" width = 1000 height="465" usemap="#shapes">
+        <map name="shapes">
+            <area shape="rect" coords="239,139,537,464" href="https://ru.wikipedia.org/wiki/Шоколад" alt="Шоколад">
+            <area shape="poly" coords="454,1,790,1,852,398,999,287,999,463,771,463,678,305" href="https://ru.wikipedia.org/wiki/Мармелад" alt="Мармелад">
+            <area shape="poly" coords="359,1,1,375,1,1" href="https://ru.wikipedia.org/wiki/Леденец" alt="Леденцы">
+
+        </map>
+        <figcaption>Выбор сладостей</figcaption> <!--Текст под изображением-->
+    </figure>
+
+    <form action="" method="get">
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <p>
+                <label for="name">Введите имя:</label>
+                <input type="text" name="name" id="name" required placeholder="Введите ваше имя"></input>
+            </p>
+    
+            <p>
+                <label for="password">Введите пароль:</label>
+                <input type="password" name="password" id="password" required placeholder="Введите пароль"></input>
+            </p>
+    
+            <p>
+                <label for="phone">Введите телефон:</label>
+                <input type="tel" name="phone" id="phone" required placeholder="Введите номер телефона"></input>
+            </p>
+    
+            <p>
+                <label for="email">Введите email:</label>
+                <input type="email" name="email" id="email" required placeholder="Введите ваш email"></input>
+            </p>
+    
+            <p>
+                <label for="file">Можете прикрепить файл с документами и рекомендациями:</label>
+                <input type="file" name="file" id="file"></input>
+            </p>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Настройки уведомлений</legend>
+            <p>
+                <label for="sales">Уведомлять меня о скидках и специальных предложениях</label>
+                <input type="checkbox" name="sales" id="sales" checked></input>
+            </p>
+    
+            <p>
+                <label for="sweets">Мне понравились сладости</label>
+                <input type="radio" name="sweets" id="sweets" checked></input>
+            </p>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Дата заполнения анкеты</legend>
+            <p>
+                <label for="time">Дата заполнения анкеты:</label>
+                <input type="datetime-local" name="time" id="time" required min="2023-01-01T00:00" max="2023-12-31T23:59" pattern="\d{4}-\d{2}-\d{2}T\d{2}:\d{2}" placeholder="ГГГГ-ММ-ДДТЧЧ:ММ"></input>
+            </p>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Комментарии</legend>
+            <p>
+                <label for="comments">Комментарии:</label>
+                <textarea name="comments" id="comments" cols="30" rows="5" minlength="10" maxlength="500" placeholder="Введите ваши комментарии здесь" required></textarea>
+            </p>
+        </fieldset>
+    
+        <button type="submit">Отправить</button>
+    </form> </br>
+
+
+    <strong>Наша галерея:</strong></br>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="image1.jpg" alt="Изображение 1">
+        </div>
+        <div class="gallery-item">
+            <img src="image2.jpg" alt="Изображение 2">
+        </div>
+        <div class="gallery-item">
+            <img src="image3.jpg" alt="Изображение 3">
+        </div>
+    </div>
+
+    <strong>Одно из наших заведений</strong></br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d793.4059100622271!2d37.63097522565389!3d55.774294882338104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b535de560da117%3A0xc062f85127a67595!2sOmens%20Coffee!5e0!3m2!1sru!2sru!4v1696536081176!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </br>
+    
+    <strong>Работник месяца</strong> </br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/geVkH3E8YIA?si=FGKKBJsTmFuVYgV2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </br>
+    <!--Ссылки якоря на заголовки и подзаголовки страницы-->
+    <a href="#Title1"><strong>Нажмите для перехода к каталогу</strong></a> </br>
+    <a href="#Topic1"><strong>Нажмите для перехода к ассортименту мороженого</strong></a> </br>
+    <a href="#Topic2"><strong>Нажмите для перехода к ассортименту конфет</strong></a> </br>
+    <a href="#Topic3"><strong>Нажмите для перехода к ассортименту шоколада</strong></a> </br>
+    <a href="#Topic4"><strong>Нажмите для перехода к ассортименту мармелада</strong></a> </br>
+    <a href="#Topic5"><strong>Нажмите для перехода к ассортименту пастилы</strong></a>
+
+    <footer>
+        <p>&copy; 2023 Магазин сладостей</p>
+        <address>
+            Разработано с любовью и страстью к сладостям <br>
+            разработчик: Дженбаз Артур <br>
+            <a href="mailto:developer@example.com">developer@example.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>

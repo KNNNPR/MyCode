@@ -1,0 +1,236 @@
+/* Стили для header (шапки сайта) */
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: static;
+    top: 0;
+    z-index: 7;
+  }
+
+
+.header-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+
+  /* Шрифт заголовков взятый из Google Fonts */
+h1, h2 {
+    font-family: 'Mooli', sans-serif;
+}
+
+
+  /* Стили для навигационного меню внутри шапки */
+  nav ul {
+    list-style-type: none;
+    color: white;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    color: white;
+    margin-right: 20px;
+  }
+  
+  /* Стили для главного контента */
+  main {
+    padding: 20px;
+  }
+  
+  /* Стили для отзывов и рекламной панели */
+  article {
+    width: 70%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 10px 20px 0;
+    position: relative;
+    float: left
+  }
+
+  aside {
+    float: right;
+    width: 20%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0 20px 10px;
+    position: relative;
+    float: right
+}
+  
+  /* Стили для актуального списка сладостей */
+  strong {
+    font-weight: bold;
+  }
+  
+  /* Стили для списка описаний */
+  dl {
+    margin-left: 20px;
+  }
+  
+  dl dt {
+    font-weight: bold;
+  }
+  
+  /* Стили для изображений с подписью */
+  figure {
+    margin: 20px 0;
+    max-width: 100%;
+  }
+  
+  /* Стили для ссылок якорей */
+  a[href^="#"] {
+    color: #f19898;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  /* Стили для футера */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Стили для футера, адреса и контактной информации */
+  address {
+    font-style: italic;
+  }
+
+  div#div1 {
+    background-color: #dfa0d9;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  form {
+    max-width: 400px; 
+    padding: 20px; 
+    background-color: #f3dada; 
+    border: 1px solid #f7a7a7; 
+    border-radius: 5px; 
+}
+
+
+input:focus, textarea:focus, select:focus {
+    background-color: #fdf2f2; 
+    border-color: #f78c8c; 
+    outline: none; 
+}
+
+
+button[type="submit"] {
+    background-color: #f78c8c; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+button[type="submit"]:hover {
+    background-color: #f78c8c; 
+}
+
+
+legend {
+    font-weight: bold; 
+    color: #f78c8c; 
+    margin-bottom: 10px; 
+}
+
+textarea {
+    resize: none;
+}
+
+
+/* Стили для бургер-меню */
+.burger {
+  cursor: pointer;
+  display: block;
+  width: 30px;
+  height: 20px;
+  position: relative;
+}
+
+.bar {
+  background: #333;
+  display: block;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  transition: transform 0.4s ease;
+  z-index: 2;
+}
+
+.bar1 { top: 0; }
+.bar2 { top: 50%; transform: translateY(-50%); }
+.bar3 { bottom: 0; }
+
+/* Исчезновение баров на мобильном устройстве */
+#burger-checkbox:checked + .burger .bar1 {
+  transform: rotate(45deg);
+  top: 50%;
+}
+#burger-checkbox:checked + .burger .bar2 {
+  opacity: 0;
+}
+#burger-checkbox:checked + .burger .bar3 {
+  transform: rotate(-45deg);
+  bottom: 50%;
+}
+
+/* Стили для меню */
+.menu {
+  visibility: hidden;
+  opacity: 0;
+  background: #ecd1d1;
+  color: #fff;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  transition: visibility 0s, opacity 0.3s linear;
+  z-index: 1;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+/* Отображение меню при активации бургера */
+#burger-checkbox:checked + .burger + .menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .burger {
+      display: block; /* Показываем бургер на мобильных устройствах */
+  }
+
+  .menu {
+      display: none; /* Скрываем меню на мобильных по умолчанию */
+  }
+
+  /* Отображение меню при активации бургера */
+  #burger-checkbox:checked + .burger + .menu {
+      display: flex; /* Показываем меню при активации бургера */
+  }
+}

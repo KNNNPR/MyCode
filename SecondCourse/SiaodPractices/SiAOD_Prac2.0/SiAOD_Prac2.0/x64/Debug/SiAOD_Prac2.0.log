@@ -1,0 +1,4 @@
+﻿  SiAOD_Prac2.0.cpp
+C:\Users\Кирилл\Desktop\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac2.0\SiAOD_Prac2.0\SiAOD_Prac2.0.cpp(159,65): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Кирилл\Desktop\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac2.0\SiAOD_Prac2.0\SiAOD_Prac2.0.cpp(139): warning C4715: binarSearch: значение возвращается не при всех путях выполнения
+  SiAOD_Prac2.0.vcxproj -> C:\Users\Кирилл\Desktop\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac2.0\x64\Debug\SiAOD_Prac2.0.exe

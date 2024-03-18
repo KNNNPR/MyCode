@@ -1,0 +1,5 @@
+﻿  SiAOD_Prac3.cpp
+C:\Users\Кирилл\Desktop\Козлов Кирилл. 2 семестр\SiAOD_Practices\Prac№3\SiAOD_Prac3\SiAOD_Prac3\SiAOD_Prac3.cpp(13,31): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Кирилл\Desktop\Козлов Кирилл. 2 семестр\SiAOD_Practices\Prac№3\SiAOD_Prac3\SiAOD_Prac3\SiAOD_Prac3.cpp(32,31): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Кирилл\Desktop\Козлов Кирилл. 2 семестр\SiAOD_Practices\Prac№3\SiAOD_Prac3\SiAOD_Prac3\SiAOD_Prac3.cpp(55,32): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  SiAOD_Prac3.vcxproj -> C:\Users\Кирилл\Desktop\Козлов Кирилл. 2 семестр\SiAOD_Practices\Prac№3\SiAOD_Prac3\x64\Debug\SiAOD_Prac3.exe

@@ -1,0 +1,4 @@
+﻿  qqqqqq.cpp
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac3\qqqqqq\qqqqqq.cpp(69): warning C4715: removeElementFunc: значение возвращается не при всех путях выполнения
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac3\qqqqqq\qqqqqq.cpp(77): warning C4715: searchElementFunc: значение возвращается не при всех путях выполнения
+  qqqqqq.vcxproj -> C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac3\x64\Debug\qqqqqq.exe

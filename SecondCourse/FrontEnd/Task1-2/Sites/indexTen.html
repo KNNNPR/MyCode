@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link rel="stylesheet" href="/Task1-2/Styles/ten.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+</head>
+
+<body onload="generate()">
+
+
+
+
+
+<div class="login-form">
+    <div class="form-title">
+        Registration
+    </div>
+    <div class="form-input">
+        <label for="username">Login</label>
+        <input type="text" id="username">
+    </div>
+    <div class="form-input">
+        <label for="password">Password</label>
+        <input type="password" id="password">
+    </div>
+    <div class="captcha">
+        <label for="captcha-input">Enter Capcha</label>
+        <div id="image" class="inline" selectable="False">
+        </div>
+        <div id="user-input" class="inline">
+            <input type="text" id="submit"
+                   placeholder="Enter" />
+        </div>
+        <div class="" onclick="generate()">
+            <i class="fas fa-sync"></i>
+        </div>
+        <div id="check-c" class="check-container">
+            <input type="text" id="input_val" />
+            <p id="operation"><span id="num1">1</span> + <span id="num2">20</span></p>
+            <button id="btn1">Enter</button>
+        </div>
+
+
+        <input type="submit" id="btn" onclick="printmsg()" placeholder="Sub" />
+
+        <p id="key"></p>
+
+    </div>
+    <div class="form-input">
+        <button id="login-btn">Submit</button>
+    </div>
+</div>
+
+<div class="accumulator-container">
+    <h1>Accumulator</h1>
+    <p>Starting Value: <span id="starting-value">0</span></p>
+    <p>Current Value: <span id="current-value">0</span></p>
+    <button id="read-btn">Add Number</button>
+</div>
+<script src="/Task1-2/JSCode/script.js"></script>
+<script src="/Task1-2/JSCode/check.js"></script>
+</body>
+</head>

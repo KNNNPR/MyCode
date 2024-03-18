@@ -1,0 +1,4 @@
+﻿  one.cpp
+C:\Users\Кирилл\Desktop\allInOne\one\one.cpp(60): warning C4715: linearSearch: значение возвращается не при всех путях выполнения
+C:\Users\Кирилл\Desktop\allInOne\one\one.cpp(56): warning C4172: возвращение адреса локальной или временной переменной : ans
+  one.vcxproj -> C:\Users\Кирилл\Desktop\allInOne\x64\Debug\one.exe

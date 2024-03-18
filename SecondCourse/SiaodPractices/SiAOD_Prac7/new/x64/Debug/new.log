@@ -1,0 +1,3 @@
+﻿  new.cpp
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac7\new\new.cpp(8,24): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  new.vcxproj -> C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\SiAOD_Prac7\x64\Debug\new.exe

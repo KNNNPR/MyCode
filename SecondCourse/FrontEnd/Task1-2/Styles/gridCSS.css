@@ -1,0 +1,283 @@
+/* BODY RULES */
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+        "nav nav nav nav"
+        "sidebar main main main"
+        "sidebar content1 content1 content1"
+        "footer footer footer footer";
+    grid-gap: 0.2rem;
+    font-family: consolas;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    background-color: rgb(52, 52, 150);
+    margin: 0;
+    padding: 0;
+}
+/* NAV RULES */
+nav {
+    background-color: rgb(100, 100, 217);
+    grid-area: nav;
+    text-align: left;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav .navName {
+    text-align: left;
+}
+/* MAIN RULES */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgb(55, 55, 55);
+    grid-gap: 0.5rem;
+    grid-template-areas: 
+        "block1 block1 block2 block3"
+        "block4 block5 block2 block6"
+        "block4 block7 block7 block7";
+    grid-area: main;
+}
+main .block1 {
+    grid-area: block1;
+    border: solid;
+    letter-spacing: 0rem;
+    transition: 0.5s;
+    background-color: rgb(55, 55, 55);
+}
+main .block1 img {
+    width: 10rem;
+} 
+main .block1:hover {
+    grid-area: block1;
+    border: solid;
+    letter-spacing: .1rem;
+    scale: 1.1;
+    background-color: white;
+    color: black;
+}
+main .block2 {
+    grid-area: block2;
+    border: solid;
+    letter-spacing: 0rem;
+    transition: 0.5s;
+    background-color: rgb(55, 55, 55);
+}
+main .block2:hover {
+    grid-area: block2;
+    border: solid;
+    letter-spacing: .1rem;
+    scale: 1.1;
+    background-color: white;
+    color: black;
+}
+main .block3 {
+    grid-area: block3;
+    border: solid;
+    letter-spacing: 0rem;
+    transition: 0.5s;
+    background-color: rgb(55, 55, 55);
+}
+main .block3:hover {
+    grid-area: block3;
+    border: solid;
+    letter-spacing: .1rem;
+    scale: 1.1;
+    background-color: white;
+    color: black;
+}
+main .block4 {
+    grid-area: block4;
+    border: solid;
+    letter-spacing: 0rem;
+    transition: 0.5s;
+    background-color: rgb(55, 55, 55);
+}
+main .block4:hover {
+    grid-area: block4;
+    border: solid;
+    letter-spacing: .1rem;
+    scale: 1.1;
+    background-color: white;
+    color: black;
+}
+main .block5{
+    grid-area: block5;
+    border: solid;
+    letter-spacing: 0rem;
+    transition: 0.5s;
+    background-color: rgb(55, 55, 55);
+}
+main .block5:hover {
+    grid-area: block5;
+    border: solid;
+    letter-spacing: .1rem;
+    scale: 1.1;
+    background-color: white;
+    color: black;
+}
+main .block6 {
+    grid-area: block6;
+    border: solid;
+    letter-spacing: 0rem;
+    transition: 0.5s;
+    background-color: rgb(55, 55, 55);
+}
+main .block6:hover {
+    grid-area: block6;
+    border: solid;
+    letter-spacing: .1rem;
+    scale: 1.1;
+    background-color: white;
+    color: black;
+}
+main .block7 {
+    grid-area: block7;
+    border: solid;
+    letter-spacing: 0rem;
+    transition: 0.5s;
+    background-color: rgb(55, 55, 55);
+}
+main .block7:hover {
+    grid-area: block7;
+    border: solid;
+    letter-spacing: .1rem;
+    scale: 1.1;
+    background-color: white;
+    color: black;
+}
+.sidebar {
+    background-color: rgb(55, 55, 55);
+    grid-area: sidebar
+}
+/* FORM FOR USER */
+.formContainer {
+    background: rgb(35, 34, 34);
+    grid-area: content1;
+}
+.formContainer h2 {
+    color: white;
+    font-size: 2em;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+}
+.container .inputBox {
+    position: relative;
+    padding: 20px;
+}
+.container .inputBox input {
+    width: 100%;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(100, 100, 217);
+    transition: 0.5s;
+}
+.container .inputBox input:focus, .container .inputBox input:valid{
+    padding: 20px 10px;
+    background-color: rgb(100, 100, 217);
+    margin-top: 10px;
+}
+.container .inputBox label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.container .inputBox:focus ~ label, .container .inputBox:valid ~ label {
+    padding: 0;
+}
+.container .inputBox textarea {
+    width: 100%;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(100, 100, 217);
+    transition: 0.5s;
+}
+.container .inputBox textarea:focus {
+    padding: 20px 10px;
+    background-color: rgb(100, 100, 217);
+    margin-top: 10px;
+}
+footer {
+    background-color: rgb(100, 100, 217);
+    grid-area: footer;
+    position: relative;
+    height: auto;
+    padding: 50px 100px;
+    text-align: left;
+}
+footer .footerContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; 
+    grid-gap: 0.3rem;
+}
+footer .footerContainer  h2{
+    position: relative;
+    font-weight: 800px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+footer .mediaLinks {
+    display: grid;
+    grid-template-columns: repeat(4, 5px);
+    grid-gap: 5rem;
+    align-items: center;
+    text-align: center;
+}
+footer li {
+    list-style: none;
+}
+footer .mediaLinks li a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    display: grid;
+    align-content: center;
+    text-decoration: none;
+}
+/* MEDIA FOR GRID */
+@media only screen and (max-width: 550px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: 
+            "nav"
+            "sidebar"
+            "main"
+            "content1"
+            "content2"
+            "content3"
+            "footer";
+    }
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: 
+            "block1"
+            "block2"
+            "block3"
+            "block4"
+            "block5"
+            "block6"
+            "block7";
+    }
+}

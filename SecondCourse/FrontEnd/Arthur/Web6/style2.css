@@ -1,0 +1,197 @@
+/* Общие стили */
+body {
+    font-family: 'Mooli', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #eb7e7e;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.header-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+/* Основное содержание */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    max-width: 400px; 
+    padding: 20px; 
+    background-color: #f3dada; 
+    border: 1px solid #f7a7a7; 
+    border-radius: 5px; 
+    max-width: 100%;
+}
+
+
+input:focus, textarea:focus, select:focus {
+    background-color: #fdf2f2; 
+    border-color: #f78c8c; 
+    outline: none; 
+}
+
+
+button[type="submit"] {
+    background-color: #f78c8c; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+button[type="submit"]:hover {
+    background-color: #f78c8c; 
+}
+
+
+legend {
+    font-weight: bold; 
+    color: #f78c8c; 
+    margin-bottom: 10px; 
+}
+
+textarea {
+    resize: none;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #ca6666;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.main-menu {
+    display: none;
+}
+.burger-icon {
+    display: none;
+}
+
+#check-menu{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .burger-icon {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    
+    .menu {
+        display: none;
+    }
+
+    /* Сначала скроем обычное меню */
+    .main-menu {
+        display: none;
+        width: 50%;
+        height: 100vh; /* 100% высоты видимой области экрана */
+        background-color: #3a3535;
+        position: fixed; 
+        top: 0; 
+        left: 50%; 
+        transition: right 0.3s ease;
+    }
+
+    .main-menu a {
+        display: block;
+        padding: 15px 20px;
+        text-align: center;
+        color: #fff; /* Цвет текста по вашему выбору */
+        text-decoration: none;
+    }
+
+    /* Показываем меню при активации чекбокса */
+    #check-menu:checked + .main-menu {
+        display: block;
+        right: 0;
+    }
+    
+    .burger-icon::before,
+    .burger-icon::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 15px;
+    background-color: #e6cbcb;
+    transition: transform 0.3s;
+    }
+
+    .burger-icon::before {
+        transform-origin: 0 0;
+    }
+
+    .burger-icon::after {
+        transform-origin: 0 100%;
+    }
+
+    /* Анимация для иконки бургера при активации чекбокса */
+    #check-menu:checked +.burger-icon::before {
+        transform: rotate(45deg);
+        transform-origin: 50% 50%;
+    }
+
+    #check-menu:checked + .burger-icon::after {
+        transform: rotate(-45deg);
+        transform-origin: 50% 50%;
+    }
+
+}

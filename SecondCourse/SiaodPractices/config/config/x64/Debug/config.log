@@ -1,0 +1,4 @@
+﻿  config.cpp
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\config\config\config.cpp(80,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\config\config\config.cpp(95): warning C4715: inserted::summation: значение возвращается не при всех путях выполнения
+  config.vcxproj -> C:\Users\Кирилл\Козлов Кирилл. 2 семестр\SecondCourse\SiaodPractices\config\x64\Debug\config.exe

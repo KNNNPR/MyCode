@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <title>Small Store</title>
+        <link rel="icon" type="image/x-icon" href="">
+        <link rel="stylesheet" href="SmallStore.css">
+        <script src="https://kit.fontawesome.com/e454a0a158.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Header with navbar and logo -->
+        <header class="mainHeader">
+           <div class="hat">
+            <h1 class="logo">Small store</h1>
+            <p class="slogan">buy any pic you want</p>
+           </div>
+           <nav class="navBar">
+            <a href="index.html">Home</a>
+            <a href="France.html">France</a>
+            <a href="German.html">Germany</a>
+            <a href="3dNavigation.html">Russia</a>
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p id="count">0</p>
+                </div>
+           </nav>
+        </header>
+
+        <!-- Main content on page -->
+        <main>
+            <div class="container">
+                <div id="root"></div>
+                <div class="sideBar">
+                    <div class="head"></div>
+                    <div id="cartItem">Your cart is empty</div>
+                    <button class="empty" onclick="clearCart()">C</button>
+                    <div class="foot">
+                        <h2>Total</h2>
+                        <h2 id="total">0</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="market">
+                <div class="marketItem">
+                    <img src="imgs/zvezdnayNoch.png" alt="">
+                    <h3>Zvezdaya noch</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <button class="buy-1" onclick="addToCartOne()">Buy</button>
+                </div>
+
+                <div class="marketItem">
+                    <img src="imgs/napolConb.png" alt="">
+                    <h3>Napoleon</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <button class="buy-1" onclick="addToCartTwo()">Buy</button>
+                </div>
+
+                <div class="marketItem">
+                    <img src="imgs/cvety.png" alt="">
+                    <h3>CBETbI</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <button class="buy-1" onclick="addToCartThree()">Buy</button>
+                </div>
+
+                <div class="marketItem">
+                    <img src="imgs/germArt/AdamEve.png" alt="">
+                    <h3>Adam and Eve</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <button class="buy-1" onclick="addToCartOne()">Buy</button>
+                </div>
+
+                <div class="marketItem">
+                    <img src="imgs/lodki.png" alt="">
+                    <h3>Lodki</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <button class="buy-1" onclick="addToCartTwo()">Buy</button>
+                </div>
+
+                <div class="marketItem">
+                    <img src="imgs/germArt/IIsus.png " alt="">
+                    <h3>CBETbI</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <button class="buy-1" onclick="addToCartThree()">Buy</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <h2>Contact us</h2>
+            <div class="socialContainer">
+                 <a href=""><i class="fab fa-github"></i></a>
+                 <a href=""><i class="fab fa-vk"></i></a>
+                 <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+         </footer>
+         <script src="cart.js"></script>
+    </body>
+</html>

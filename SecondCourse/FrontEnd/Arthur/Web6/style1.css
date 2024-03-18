@@ -1,0 +1,287 @@
+/* Общие стили */
+body {
+    font-family: 'Mooli', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #eb7e7e;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.header-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+/* Основное содержание */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    max-width: 400px; 
+    padding: 20px; 
+    background-color: #f3dada; 
+    border: 1px solid #f7a7a7; 
+    border-radius: 5px; 
+    max-width: 100%;
+}
+
+
+input:focus, textarea:focus, select:focus {
+    background-color: #fdf2f2; 
+    border-color: #f78c8c; 
+    outline: none; 
+}
+
+
+button[type="submit"] {
+    background-color: #f78c8c; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+button[type="submit"]:hover {
+    background-color: #f78c8c; 
+}
+
+
+legend {
+    font-weight: bold; 
+    color: #f78c8c; 
+    margin-bottom: 10px; 
+}
+
+textarea {
+    resize: none;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #ca6666;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+
+/*
+
+#menu-toggle {
+    display: none;
+  }
+  
+ 
+  #menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+  
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px auto;
+    transition: 0.4s;
+  }
+  
+
+  .mobile-menu {
+    display: none;
+  }
+  
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .mobile-menu li {
+    padding: 10px 0;
+  }
+  
+ 
+  #menu-toggle:checked + .menu-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  #menu-toggle:checked + .menu-icon span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #menu-toggle:checked + .menu-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  #menu-toggle:checked + .mobile-menu {
+    display: block;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .header-logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+} 
+*/
+
+
+/* Стили для меню бургера */
+.menu-icon {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s ease; /* Добавляем анимацию */
+  cursor: pointer;
+}
+
+#menu-toggle:checked + .menu-icon {
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-icon::before {
+  transform: translateY(8px) rotate(-45deg);
+}
+
+#menu-toggle:checked + .menu-icon::after {
+  display: none;
+}
+
+/* Стили для скрытого меню */
+nav ul {
+  list-style-type: none;
+  color: white;
+  padding: 0;
+  position: absolute;
+  top: 60px;
+  right: -250px;
+  width: 200px;
+  background-color: #333;
+  transition: right 0.3s ease; /* Добавляем анимацию */
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+#menu-toggle:checked + .menu-icon + nav ul {
+  right: 0;
+}
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+.menu-icon {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+.header-logo {
+    margin-bottom: 10px;
+  }
+
+nav ul {
+    flex-direction: column;
+  }
+
+nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .menu-icon {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  #menu-toggle:checked + .menu-icon + nav ul {
+    display: block;
+  }
+}
+
+
+  

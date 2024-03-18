@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>12-13</title>
+  <style>
+    .notification-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 2px 3.5px;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="notificationBtn" class="notification-btn">Уведомление (0)</button>
+
+  <script>
+    let count = 0;
+    let notificationInterval;
+    
+    function updateNotification() {
+      count++;
+      const notificationBtn = document.createElement('button');
+      notificationBtn.classList.add('notification-btn');
+      notificationBtn.innerText = `Уведомление (${count})`;
+      const closeBtn = document.createElement('button');
+      closeBtn.classList.add('close-btn');
+      closeBtn.innerText = 'X';
+      notificationBtn.appendChild(closeBtn);
+      document.body.appendChild(notificationBtn);
+    }
+    
+    function startNotificationInterval() {
+      notificationInterval = setInterval(updateNotification, 3000);
+    }
+    
+    function stopNotification() {
+      clearInterval(notificationInterval);
+      setTimeout(startNotificationInterval, 10000);
+    }
+    
+    document.body.addEventListener('click', function(event) {
+      const target = event.target;
+      if (target.classList.contains('close-btn')) {
+        target.parentNode.remove();
+      } else if (target.id === 'notificationBtn') {
+        stopNotification();
+      }
+    });
+    
+    startNotificationInterval();
+  </script>
+</body>
+</html>

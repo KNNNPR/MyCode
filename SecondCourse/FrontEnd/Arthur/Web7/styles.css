@@ -1,0 +1,284 @@
+
+body{
+  background-color: lightcyan;
+  color: orange;
+}
+
+p{
+  color: brown;
+}
+
+
+
+
+
+
+/* для ссылок навигации */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Стили для бургер-меню */
+.burger {
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+}
+
+.bar {
+    background: #333;
+    display: block;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+
+.bar1 { top: 0; }
+.bar2 { top: 50%; transform: translateY(-50%); }
+.bar3 { bottom: 0; }
+
+/* Исчезновение баров на мобильном устройстве */
+#burger-checkbox:checked + .burger .bar1 {
+    transform: rotate(45deg);
+    top: 50%;
+}
+#burger-checkbox:checked + .burger .bar2 {
+    opacity: 0;
+}
+#burger-checkbox:checked + .burger .bar3 {
+    transform: rotate(-45deg);
+    bottom: 50%;
+}
+
+/* Стили для меню */
+.menu {
+    visibility: hidden;
+    opacity: 0;
+    background: #333;
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    transition: visibility 0s, opacity 0.3s linear;
+    z-index: 1;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+/* Отображение меню при активации бургера */
+#burger-checkbox:checked + .burger + .menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+  h1 {
+    width: 132.5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+  }
+
+  h2,h3 {
+    width: 132.5px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+
+  .container3{
+    float: right;
+    text-align: center;
+  }
+
+
+
+  img{
+    float: left;
+    margin-right:1rem;
+  }
+
+  pre {
+    text-align: start;
+    width:  500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid darkcyan;
+  }
+
+
+/* Свойства блоки */
+  .relative-box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: red;
+  }
+
+  .absolute-box {
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+  }
+
+  .fixed-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 250px;
+    height: 120px;
+    background-color: green;
+  }
+
+  .sticky-element {
+    position: sticky;
+    top: 50px;
+    width: 300px;
+    height: 120px;
+    background-color: yellow;
+  }
+
+
+  /* Медиа-запрос для отображения меню на мобильных */
+@media screen and (max-width: 768px) {
+    .burger {
+        display: block; /* Показываем бургер на мобильных устройствах */
+    }
+
+    .menu {
+        display: none; /* Скрываем меню на мобильных по умолчанию */
+    }
+
+    /* Отображение меню при активации бургера */
+    #burger-checkbox:checked + .burger + .menu {
+        display: flex; /* Показываем меню при активации бургера */
+    }
+}
+
+/**/
+
+
+/* Расположение навигации и лого с помощью position */
+nav {
+  position: relative; 
+  top: 100; 
+  left: 100; 
+}
+
+logo {
+  position: absolute; 
+  top: 20px; 
+  left: 20px; 
+}
+
+.block {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+
+
+/* Стилизация всей формы */
+form {
+    background-color: #f0f0f0; /* Цвет фона формы */
+    padding: 20px; /* Внутренние отступы формы */
+    font-family: Arial, sans-serif; /* Шрифт формы */
+}
+
+/* Стилизация полей ввода */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+input[type="datetime-local"] {
+    background-color: #fff; /* Цвет фона полей ввода */
+    border: 1px solid #ccc; /* Граница полей ввода */
+    padding: 5px; /* Внутренние отступы полей ввода */
+    margin-bottom: 10px; /* Отступ между полями ввода */
+}
+
+/* Стилизация поля ввода при фокусе */
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus,
+input[type="datetime-local"]:focus {
+    border-color: #007bff; /* Цвет границы при фокусе */
+    box-shadow: 0 0 5px #007bff; /* Тень при фокусе */
+}
+
+/* Стилизация кнопки отправки */
+input[type="submit"] {
+    background-color: #007bff; /* Цвет фона кнопки отправки */
+    color: #fff; /* Цвет текста на кнопке */
+    padding: 10px 20px; /* Внутренние отступы кнопки */
+    border: none; /* Убираем границу кнопки */
+    cursor: pointer; /* Изменение курсора при наведении */
+}
+
+/* Стилизация текстового поля */
+textarea {
+    background-color: #fff; /* Цвет фона текстового поля */
+    border: 1px solid #ccc; /* Граница текстового поля */
+    padding: 5px; /* Внутренние отступы текстового поля */
+    margin-bottom: 10px; /* Отступ между текстовыми полями */
+}
+
+/* Стилизация текстового поля при фокусе */
+textarea:focus {
+    border-color: #007bff; /* Цвет границы при фокусе */
+    box-shadow: 0 0 5px #007bff; /* Тень при фокусе */
+}
+
+
+/* Стилизация подсказок в текстовых полях ввода */
+input[type="name"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="file"]::placeholder,
+input[type="datetime-local"]::placeholder,
+textarea::placeholder {
+    color: #888; /* Цвет подсказок */
+    font-style: italic; /* Курсив для подсказок */
+}
+
+/* Стилизация подсказок в текстовых полях ввода при фокусе */
+input[type="name"]:focus::placeholder,
+input[type="tel"]:focus::placeholder,
+input[type="email"]:focus::placeholder,
+input[type="password"]:focus::placeholder,
+input[type="file"]:focus::placeholder,
+input[type="datetime-local"]:focus::placeholder,
+textarea:focus::placeholder {
+    color: #ccc; /* Измененный цвет подсказок при фокусе */
+}

@@ -1,0 +1,158 @@
+/* Essential CSS rules for site */
+:root {
+    --backColor: rgb(67, 106, 146);
+    --headerColor: rgb(38, 59, 97);
+}
+* {
+    margin: 0px;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+html {
+    font-family: consolas;
+    font-size: 2rem;
+}
+/* Rules for page */
+body {
+    background-color: var(--backColor);
+    color: white;
+}
+/* Rules for header */
+.mainHeader {
+    background-color: var(--headerColor);
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 3%;
+}
+/* Rules for logo */
+.logo {
+    width:min-content;
+    border-bottom: solid 1px;
+    margin-bottom: 1rem;
+}
+/* Rules for navbar */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3%;
+    gap: 5%;
+}
+.navBar a {
+    color: white;
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+}
+.navBar a:hover {
+    text-shadow: 0 0 20px white;
+    letter-spacing: 0.1rem;
+}
+footer {
+    background-color: var(--headerColor);
+}
+footer h2 {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+footer .socialContainer {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.socialContainer a {
+    color: white;
+}
+/* MAIN RULES */
+
+.picGallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.column {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.block img {
+    width: 50%;
+}
+.block {
+    border-radius: 10px;
+    position: relative;
+}
+.block .content1, .block .content2, .block .content3,
+.block .content4, .block .content5, .block .content6,
+.block .content7, .block .content8, .block .content9,
+.block .content10, .block .content11, .block .content12{
+    border: solid;
+    font-size: 0.9vmax;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s;
+}
+.block:hover .content1, .block:hover .content2, .block:hover .content3,
+.block:hover .content4, .block:hover .content5, .block:hover .content6,
+.block:hover .content7, .block:hover .content8, .block:hover .content9,
+.block:hover .content10, .block:hover .content11, .block:hover .content12 {
+    opacity: 1;
+    transform: translateX(100%);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 0.3rem;
+    }
+    .logo {
+        font-size: 64px;
+    }
+    footer a i, footer h2{
+        font-size: 64px;
+    }
+    .navBar {
+        flex-direction: column;
+    }
+    .navBar a {
+        font-size: 32px;
+    }
+    .outer {
+        margin-top: 200px;
+        margin-bottom: 100px;
+        flex-direction: column;
+    }
+    .outer1 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        flex-direction: column;
+    }
+    .container {
+        width: 350px;
+        height: 300px;
+    }
+    .content2 {
+        padding: 0px;
+        flex-direction: column;
+    }
+    .card2 {
+        height: 50px;
+        margin: 0px;
+   } 
+   .circle {
+    display: none;
+   }
+}

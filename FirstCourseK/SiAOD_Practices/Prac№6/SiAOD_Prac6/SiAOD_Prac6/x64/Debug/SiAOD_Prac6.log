@@ -1,0 +1,6 @@
+﻿  SiAOD_Prac6.cpp
+C:\Users\Кирилл\Desktop\Козлов Кирилл. 2 семестр\SiAOD_Practices\Prac№6\SiAOD_Prac6\SiAOD_Prac6\SiAOD_Prac6.cpp(224,18): warning C4101: buff: неиспользованная локальная переменная
+C:\Users\Кирилл\Desktop\Козлов Кирилл. 2 семестр\SiAOD_Practices\Prac№6\SiAOD_Prac6\SiAOD_Prac6\SiAOD_Prac6.cpp(10): warning C4715: recurseBinar: значение возвращается не при всех путях выполнения
+C:\Users\Кирилл\Desktop\Козлов Кирилл. 2 семестр\SiAOD_Practices\Prac№6\SiAOD_Prac6\SiAOD_Prac6\SiAOD_Prac6.cpp(183): warning C4715: RecursePushFront: значение возвращается не при всех путях выполнения
+C:\Users\Кирилл\Desktop\Козлов Кирилл. 2 семестр\SiAOD_Practices\Prac№6\SiAOD_Prac6\SiAOD_Prac6\SiAOD_Prac6.cpp(169): warning C4715: RecursePushBack: значение возвращается не при всех путях выполнения
+  SiAOD_Prac6.vcxproj -> C:\Users\Кирилл\Desktop\Козлов Кирилл. 2 семестр\SiAOD_Practices\Prac№6\SiAOD_Prac6\x64\Debug\SiAOD_Prac6.exe

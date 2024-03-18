@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Паралакс</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      height: 2000px; /* Для имитации прокрутки */
+      margin: 0;
+      background-color: rgb(0, 0, 0);
+    }
+    .parallax-container {
+      height: 1000px;
+      background-image: url('/Task1-2/CourseWork/imgs/zvezdnayNoch.png');
+      background-size: cover;
+      background-attachment: fixed;
+      overflow: hidden;
+    }
+    .parallax-content {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      color: white;
+      font-size: 36px;
+    }
+
+    p{
+        color: white;
+        font-size:3rem;
+    }
+
+    h1{
+        color: #fff;
+    }
+
+    .content {
+      margin-top: 500px;
+    }
+    .new-content {
+      padding: 20px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="parallax-container"> </div>
+  
+
+  <div class="content">
+    <div class="new-content">Содержимое 1</div>
+    <div class="new-content">Содержимое 2</div>
+    <div class="new-content">Содержимое 3</div>
+
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+    let scrollPosition = window.pageYOffset;
+
+    const parallaxContainer = document.querySelector('.parallax-container');
+    let parallaxValue = scrollPosition * 0.2;
+    parallaxContainer.style.backgroundPositionY = -parallaxValue + 'px';
+    });
+
+    window.addEventListener('scroll', function() {
+      var scrollPosition = window.scrollY;
+      var windowHeight = window.innerHeight;
+      var documentHeight = document.documentElement.scrollHeight;
+      if (scrollPosition > (documentHeight - windowHeight) / 2) {
+        var newContent = document.createElement('div');
+        newContent.classList.add('new-content');
+        newContent.textContent = 'Новое содержимое ' + (document.querySelectorAll('.new-content').length + 1);
+        document.querySelector('.content').appendChild(newContent);
+      }
+    });
+
+  </script>
+</body>
+</html>

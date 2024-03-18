@@ -1,0 +1,15 @@
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.odd:hover {
+    background-color: blue;
+}
+
+.notOdd:hover {
+    background-color: red;
+}

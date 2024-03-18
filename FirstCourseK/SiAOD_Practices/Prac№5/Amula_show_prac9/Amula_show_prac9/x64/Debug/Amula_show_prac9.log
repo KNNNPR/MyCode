@@ -1,0 +1,4 @@
+﻿  Amula_show_prac9.cpp
+C:\Users\Кирилл\Desktop\Козлов Кирилл. 2 семестр\FirstCourseK\SiAOD_Practices\Prac№5\Amula_show_prac9\Amula_show_prac9\Amula_show_prac9.cpp(63): warning C4715: linearSearch: значение возвращается не при всех путях выполнения
+C:\Users\Кирилл\Desktop\Козлов Кирилл. 2 семестр\FirstCourseK\SiAOD_Practices\Prac№5\Amula_show_prac9\Amula_show_prac9\Amula_show_prac9.cpp(59): warning C4172: возвращение адреса локальной или временной переменной : ans
+  Amula_show_prac9.vcxproj -> C:\Users\Кирилл\Desktop\Козлов Кирилл. 2 семестр\FirstCourseK\SiAOD_Practices\Prac№5\Amula_show_prac9\x64\Debug\Amula_show_prac9.exe

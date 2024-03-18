@@ -1,0 +1,285 @@
+/* Essential CSS rules for site */
+:root {
+    --backColor: rgb(67, 106, 146);
+    --headerColor: rgb(38, 59, 97);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+html {
+    font-family: consolas;
+    font-size: 2rem;
+}
+/* Rules for page */
+body {
+    background-color: var(--backColor);
+    color: white;
+}
+
+
+
+/* Rules for header */
+.mainHeader {
+    background-color: var(--headerColor);
+    /* justify-content: center; */
+    align-items: center;
+    padding: 1.5rem 3%;
+}
+/* Rules for logo */
+.logo {
+    width:min-content;
+    border-bottom: solid 1px;
+    margin-bottom: 1rem;
+}
+/* Rules for navbar */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.navBar a {
+    color: white;
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+}
+.navBar a:hover {
+    text-shadow: 0 0 20px white;
+    letter-spacing: 0.1rem;
+}
+/* Rules for main */
+/* rules for sections */
+section {
+    padding: 0%;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: auto;
+    margin-bottom: 5%;
+    text-align: center;
+    transition: 0.5s;
+}
+section:hover {
+    scale: 1.1;
+    background-color: white;
+    color: var(--headerColor);
+}
+/* rules for footer */
+footer {
+    background-color: var(--headerColor);
+}
+footer h2 {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+footer .socialContainer {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.socialContainer a {
+    color: white;
+}
+/* rules for form */
+.box {
+    border-radius: 10%;
+    position: relative;
+    background: transparent;
+}
+.outer {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(40vh - 40px);
+}
+.container {
+    width: 20rem;
+    height: 15rem;
+    display: flex;
+    min-height: 400px;
+    position: relative;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.form {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    position: relative;
+}
+.form h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+.form h2::before {
+    left: 0;
+    width: 80px;
+    height: 4px;
+    content: "";
+    bottom: -10px;
+    background: #fff;
+    position: absolute;
+}
+.form .inputBox {
+    width: 100%;
+    margin-top: 20px;
+}
+.form .inputBox input {
+    width: 100%;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    border-radius: 35px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.form::placeholder {
+    color: #fff;
+}
+.form .inputBox input[type="submit"] {
+    color: #666;
+    cursor: pointer;
+    background: #fff;
+    max-width: 100px;
+    font-weight: 600;
+}
+/* rules for list */
+.outer1 {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content2 {
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 10rem;
+    height: 10rem;
+    padding: 20px;
+    text-align: center;
+    gap: 2rem;
+  }
+  .card2 {
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 10px;
+    width: 180px;
+    height: 280px;
+    background-color: rgba(38, 59, 97, 0.8);
+    backdrop-filter: blur(3px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease-in-out;
+  }
+  .card2:hover {
+    transform: scale(1.1);
+  }
+  .card2:hover .avatar {
+    transform: scale(1.1);
+    object-position: 50% 65%;
+  }
+  .content2:hover .card2 {
+    filter: blur(5px);
+    transition: 0.5s;
+    opacity: 0.5;
+  }
+  .content2 .card2:hover {
+    filter: blur(0px);
+    opacity: 1;
+  }
+  .circle {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    transition: 0.15s ease-in-out;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:active {
+    color: white;
+  }
+  a:visited {
+    color: white;
+  }
+
+
+
+  @media (max-width: 768px) {
+    * {
+        font-size: 0.7rem;
+    }
+    .logo {
+        font-size: 64px;
+    }
+    footer a i, footer h2{
+        font-size: 64px;
+    }
+    .navBar {
+        flex-direction: column;
+    }
+    .navBar a {
+        font-size: 32px;
+    }
+    .outer {
+        margin-top: 200px;
+        margin-bottom: 100px;
+        flex-direction: column;
+    }
+    .outer1 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        flex-direction: column;
+    }
+    .container {
+        width: 350px;
+        height: 300px;
+    }
+    .content2 {
+        padding: 0px;
+        flex-direction: column;
+    }
+    .card2 {
+        height: 50px;
+        margin: 0px;
+   } 
+   .circle {
+    display: none;
+   }
+}
